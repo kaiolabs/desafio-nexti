@@ -5,20 +5,19 @@ import api from "../services/api";
 
 function Home() {
 
-    const [user, setUser] = useState();
+    // const [user, setUser] = useState();
+
+    // useEffect(() => {
+    //     api
+    //       .get("/menu/menu.json")
+    //       .then((response) => setUser(response.data))
+    //       .catch((err) => {
+    //         console.error("ops! ocorreu um erro" + err);
+    //       });
+    //   }, []);
 
 
-    useEffect(() => {
-        api
-          .get("/menu/menu.json")
-          .then((response) => setUser(response.data))
-          .catch((err) => {
-            console.error("ops! ocorreu um erro" + err);
-          });
-      }, []);
-
-
-      console.log(user)
+    //   console.log(user)
 
 
     return ( 
