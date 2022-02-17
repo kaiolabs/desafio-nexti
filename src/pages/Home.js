@@ -3,13 +3,14 @@ import styles from './Home.module.css'
 import { useState, useEffect } from 'react'
 import api from "../services/api";
 
+
 function Home() {
 
     // const [user, setUser] = useState();
 
     // useEffect(() => {
     //     api
-    //       .get("/menu/menu.json")
+    //       .get("https://desafioreact.s3.amazonaws.com/menu/menu.json")
     //       .then((response) => setUser(response.data))
     //       .catch((err) => {
     //         console.error("ops! ocorreu um erro" + err);
@@ -19,13 +20,12 @@ function Home() {
 
     //   console.log(user)
 
-
-    return ( 
+    return (
         <div>
             <section className={styles.grid}>
 
                 <header>
-                    <NavBar/>
+                    <NavBar />
                 </header>
 
                 <aside>
@@ -42,7 +42,7 @@ function Home() {
 
             </section>
         </div>
-     );
+    );
 }
 
 export default Home;
