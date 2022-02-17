@@ -15,6 +15,7 @@ function App() {
   const toogleTheme = () => {
     setTheme(theme.title === 'light' ? dark : light )
   }
+  
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle/>
