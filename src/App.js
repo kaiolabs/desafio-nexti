@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import light from './components/themes/light'; 
+import dark from './components/themes/dark';
+import React from 'react';
+import GlobalStyle from './styles/global';
+import { ThemeProvider } from 'styled-components';
+import usePersistedState from './utils/usePersistedState';
 
 function App() {
+  
+  const [theme, setTheme] = usePersistedState('theme', light)
+
+  const toogleTheme = () => {
+    setTheme(theme.title === 'light' ? dark : light )
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle/>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Login toogleTheme={toogleTheme}/>}></Route>
+          <Route path="/Home" element={<Home/>}></Route>
+        </Routes>
+      </Router>
+    </ThemeProvider>
   );
 }
 

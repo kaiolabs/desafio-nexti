@@ -1,0 +1,26 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1A73E8;
+    width: 100%;
+    height: 10vh;
+}
+
+
+button{
+    font-size: 17px;
+    color: white;
+    background: none;
+    border: none;
+    margin: 20px;
+    margin-right: 30px;
+    width: auto;
+    height: 35px;
+    cursor: pointer;
+}
+
+svg{
+    font-size: 1.5em;
+}
+
