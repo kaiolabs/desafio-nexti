@@ -22,7 +22,7 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={<Login toogleTheme={toogleTheme}/>}></Route>
-          <Route path="/Home" element={<Home/>}></Route>
+          <Route path="/Home" element={<Home toogleTheme={toogleTheme}/>}></Route>
         </Routes>
       </Router>
     </ThemeProvider>

@@ -4,24 +4,24 @@ import styled from "styled-components";
 import { IoMdArrowDropdown } from 'react-icons/io'
 import { useState, useEffect } from 'react'
 import { i18n } from '../translate/i18n'
-// import api from "../services/api";
+import api from "../services/api";
 
 
-function Home() {
+function Home({toogleTheme}) {
 
-    // const [user, setUser] = useState();
+    const [user, setUser] = useState();
 
-    // useEffect(() => {
-    //     api
-    //       .get("https://desafioreact.s3.amazonaws.com/menu/menu.json")
-    //       .then((response) => setUser(response.data))
-    //       .catch((err) => {
-    //         console.error("ops! ocorreu um erro" + err);
-    //       });
-    //   }, []);
+    useEffect(() => {
+        api
+          .get("https://desafioreact.s3.amazonaws.com/menu/menu.json")
+          .then((response) => setUser(response.data))
+          .catch((err) => {
+            console.error("ops! ocorreu um erro" + err);
+          });
+      }, []);
 
 
-    //   console.log(user)
+      console.log(user)
 
     const Aside = styled.div`
 
@@ -75,7 +75,7 @@ function Home() {
             <section className={styles.grid}>
 
                 <header>
-                    <NavBar />
+                    <NavBar toogleTheme = {toogleTheme}/>
                 </header>
 
                 <aside>
@@ -84,7 +84,7 @@ function Home() {
                             <h1>{name}</h1>
                         </div>
 
-                        <button>NOVO <IoMdArrowDropdown /></button>
+                        <button>{i18n.t('buttons.buttonNovo')} <IoMdArrowDropdown /></button>
                         
                     </Aside>
                     <hr className={styles.linha}/>
@@ -106,9 +106,9 @@ function Home() {
                         <div className={styles.buttons}>
                             <input className={styles.check} type="checkbox" name="check"/>
                             <div>
-                                <button>ATRIBUIR</button>
-                                <button>ARQUIVAR</button>
-                                <button>AGENDAR</button>
+                                <button>{i18n.t('buttons.buttonAtribuir')}</button>
+                                <button>{i18n.t('buttons.buttonArquivar')}</button>
+                                <button>{i18n.t('buttons.buttonAgendar')}</button>
                             </div>
                         </div>
                     </div>

@@ -14,6 +14,11 @@ const messages = {
                 save: 'Login',
                 buttonAjuda: 'Help',
                 buttonConfg: 'Settings',
+                buttonAtribuir: 'ASSIGN',
+                buttonArquivar: 'FILE',
+                buttonAgendar: 'SCHEDULE',
+                buttonNovo: 'NEW',
+                buttonLogout: 'Logout',
             },
         }
     }
