@@ -7,12 +7,13 @@ const messages = {
             messages: {
                 placeholderPassword: 'Informar la contraseña',
                 placeholderUser: 'Nombre de usuario',
-                messagesError: '¡Usuario o contraseña invalido!'
+                messagesError: '¡Usuario o contraseña invalido!',
+                pesquisa: 'Búsqueda',
             },
             buttons: {
                 save: 'Iniciar sesión',
                 buttonAjuda: 'Ayudar',
-                buttonConfg: 'Ajustes'
+                buttonConfg: 'Ajustes',
             },
         }
     }

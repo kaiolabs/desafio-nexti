@@ -7,12 +7,13 @@ const messages = {
             messages: {
                 placeholderPassword: 'password',
                 placeholderUser: 'User name',
-                messagesError: 'Invalid Username or Password!'
+                messagesError: 'Invalid Username or Password!',
+                pesquisa: 'Search',
             },
             buttons: {
                 save: 'Login',
                 buttonAjuda: 'Help',
-                buttonConfg: 'Settings'
+                buttonConfg: 'Settings',
             },
         }
     }

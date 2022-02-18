@@ -18,13 +18,59 @@ main {
 }
 
 .mainTop{
+    flex-direction: column;
     width: 100%;
     height: 27%;
-    border-bottom: 2px solid #1A73E8;
+    display: flex;
 }
 
-.asideTop{
-    width: 100%;
-    height: 16%;
-    border-bottom: 2px solid #1A73E8;
+.input{
+    margin: 30px 30px 20px 30px;
+    width: 75vw;
+    color: #1A73E8;
+    border-bottom: 1px solid #1A73E8;
 }
+
+input::-webkit-input-placeholder {
+    color: #1A73E8;
+}
+
+.check{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    margin-right: 15px;
+}
+
+.buttons{
+    margin-left: 30px;
+    align-items: center;
+    width: 75vw;
+    display: flex;
+    
+    flex-direction: row;
+}
+
+.buttons button{
+    margin: 10px;
+    width: 100px;
+    height: 35px;
+    border-radius: 4px;
+    background-color: #1A73E8;
+    color:white;
+    font-weight: 600;
+    font-size: 1em;
+    transition: 0.5s;
+}
+
+.buttons button:hover{
+    background-color: #0d458f;
+    transition: 0.5s;
+}
+
+.linha{
+    margin-top: -5px;
+    width: 85%;
+    border-bottom: 1px solid #1A73E8;
+}
+

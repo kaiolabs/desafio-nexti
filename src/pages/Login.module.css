@@ -14,7 +14,7 @@
     margin-bottom: 25px;
     width: 300px;
     height: 50px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(50px);
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.25);
@@ -43,6 +43,7 @@
 }
 
 .boxLogin h2{
+    color: #1a73e8;
     margin-bottom: 50px;
     font-weight: 600;
     font-size: 1.9em;
@@ -79,12 +80,12 @@ input{
     height: 30px;
     color: rgb(24, 26, 41);
     font-size: 1.1em;
-    border-bottom: 1px solid rgb(24, 26, 41);
+    border-bottom: 1px solid #1A73E8;
     
 }
 
 input::-webkit-input-placeholder {
-    color: rgb(24, 26, 41);
+    color: #1a73e8;
 }
 .linguagem{
     color: rgb(24, 26, 41);
