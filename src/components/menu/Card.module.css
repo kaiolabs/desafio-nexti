@@ -1,0 +1,30 @@
+
+.li{
+    text-decoration: none;
+    width: 100px;
+    list-style: none;
+    padding: 10px;
+    margin: 10px 5px -25px 25px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 1.2em;
+}
+
+.p{
+    width: 100px;
+    transition: 0.5s;
+    padding: 5px;
+    font-size: 0.9em;
+}
+
+.p:hover{
+    background-color: #93c2ffa6;
+    border-radius: 5px;
+}
+
+.span{
+    margin-right: 7px;
+    color: #1A73E8;
+    font-weight: 600;
+    font-size: 1.2em;
+}

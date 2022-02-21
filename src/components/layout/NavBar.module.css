@@ -67,6 +67,7 @@ svg{
 }
 
 .dropDown{
+    z-index: 10;
     position: absolute;
     top: 67px;
     left: 9.1%;

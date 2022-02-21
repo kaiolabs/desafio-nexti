@@ -1,0 +1,75 @@
+.card{
+    background-color: whitesmoke;
+    width: 75vw;
+    height: 25vh;
+    border-bottom: 1px solid gray;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.parte1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+}
+
+.parte2{
+    margin-left: 40px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 100%;
+}
+
+.parte3{
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-end;
+    width: 15%;
+    height: 92%;
+}
+
+.name{
+    cursor: pointer;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(39, 228, 196);
+}
+
+.users{
+    cursor: pointer;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1em;
+    text-transform: uppercase;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(39, 228, 196);
+}
+
+.msg{
+    display: flex;
+    align-items: center;
+}
+
+.msg svg{
+    margin-right: 10px;
+    font-size: 1.4em;
+}

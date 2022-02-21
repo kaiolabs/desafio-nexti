@@ -48,6 +48,7 @@ function Login({ toogleTheme }) {
         // Verifica se os campos foram preenchidos corretamente
         if (nomeDeUsuario == bancoDeUsuarios.userName && senhaDeUsuario == bancoDeUsuarios.password) {
             history('/Home')
+            // Salva as iniciais do usuário
             localStorage.setItem("name", nomeDeUsuario.substring(0 , 2))
         } else {
             setMessage(`${i18n.t('messages.messagesError')}`)

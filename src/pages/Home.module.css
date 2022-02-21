@@ -8,10 +8,10 @@ header {
     height: 10vh;
     grid-column-start: 1;
     grid-column-end: 3;
+   
 }
 aside { 
     height: 90vh;
-    border-right: 2px solid #1A73E8;
  }
 main {
     height: 90vh;
@@ -53,7 +53,7 @@ input::-webkit-input-placeholder {
 
 .buttons button{
     margin: 10px;
-    width: 100px;
+    width: 110px;
     height: 35px;
     border: none;
     border-radius: 4px;
@@ -70,8 +70,21 @@ input::-webkit-input-placeholder {
 }
 
 .linha{
-    margin-top: -5px;
+    margin-top: 2px;
+    margin-bottom: 10px;
     width: 85%;
-    border-bottom: 1px solid #1A73E8;
+    border: 1px solid #1A73E8;
 }
 
+.aside{
+    overflow: hidden;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.mainEmails{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}

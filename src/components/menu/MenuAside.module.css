@@ -1,0 +1,12 @@
+.menuPrincipal{
+    width: 16.5vw;
+    height: 100px;
+    margin-top: 40px;
+}
+
+.div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 0;
+}

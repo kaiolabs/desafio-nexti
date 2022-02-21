@@ -1,27 +1,15 @@
-import NavBar from "../components/layout/NavBar";
-import styles from './Home.module.css'
-import styled from "styled-components";
+import MenuAside from '../components/menu/MenuAside'
 import { IoMdArrowDropdown } from 'react-icons/io'
-import { useState, useEffect } from 'react'
+import NavBar from '../components/layout/NavBar'
+import Emails from '../components/emails/Emails'
 import { i18n } from '../translate/i18n'
-import api from "../services/api";
+import styled from 'styled-components'
+import styles from './Home.module.css'
+import { useState } from 'react'
 
 
-function Home({toogleTheme}) {
 
-    const [user, setUser] = useState();
-
-    useEffect(() => {
-        api
-          .get("https://desafioreact.s3.amazonaws.com/menu/menu.json")
-          .then((response) => setUser(response.data))
-          .catch((err) => {
-            console.error("ops! ocorreu um erro" + err);
-          });
-      }, []);
-
-
-      console.log(user)
+function Home() {
 
     const Aside = styled.div`
 
@@ -33,19 +21,37 @@ function Home({toogleTheme}) {
         width: 100%;
         height: 16%;
 
+        .backAvatar{
+            display: flex;
+            justify-content: center;
+
+        }
+        
         .avatar{
             background-color:  #79a6e2;
             
-            width: 30px;
+            width: 40px;
             padding: 7px;
-            height: 30px;
-            overflow: hidden;
+            height: 40px;
             border-radius: 50%;
             align-items: center;
             display: flex;
             justify-content: center;
             font-size: 1.3em;
             text-transform: uppercase;
+        }
+
+        .on{
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            padding: 5px;
+            position: relative;
+            left: 55px;
+            top: 35px;
+            background-color: #3dc73d;
+            border: 1px solid #EFEFEF;
+
         }
 
         button{
@@ -67,34 +73,42 @@ function Home({toogleTheme}) {
         }
     `;
 
+
     const [name] = useState(localStorage.getItem("name"))
     const [pesquisa, setPesquisa] = useState()
+
 
     return (
         <div>
             <section className={styles.grid}>
 
                 <header>
-                    <NavBar toogleTheme = {toogleTheme}/>
+                    <NavBar />
                 </header>
 
-                <aside>
+                <aside className={styles.aside}>
                     <Aside>
-                        <div className="avatar">
-                            <h1>{name}</h1>
+                        <div className="backAvatar">
+                            <div className="on"></div>
+                            <div className="avatar">
+                                <h1>{name}</h1>
+                            </div>
                         </div>
+                        <button>{i18n.t('buttons.buttonNovo')} <IoMdArrowDropdown/> </button>
 
-                        <button>{i18n.t('buttons.buttonNovo')} <IoMdArrowDropdown /></button>
-                        
                     </Aside>
-                    <hr className={styles.linha}/>
+
+                    <hr className={styles.linha} />
+
+                    <MenuAside />
+
                 </aside>
 
                 <main>
                     <div className={styles.mainTop}>
                         <div>
                             <input
-                            className={styles.input}
+                                className={styles.input}
                                 type="text"
                                 name="pesquisa"
                                 autoComplete="on"
@@ -104,7 +118,7 @@ function Home({toogleTheme}) {
                             />
                         </div>
                         <div className={styles.buttons}>
-                            <input className={styles.check} type="checkbox" name="check"/>
+                            <input className={styles.check} type="checkbox" name="check" />
                             <div>
                                 <button>{i18n.t('buttons.buttonAtribuir')}</button>
                                 <button>{i18n.t('buttons.buttonArquivar')}</button>
@@ -113,10 +127,11 @@ function Home({toogleTheme}) {
                         </div>
                     </div>
 
-                    <div>
-                        
+                    <div className={styles.mainEmails}>
+                        <Emails/>
                     </div>
                 </main>
+
 
             </section>
         </div>
