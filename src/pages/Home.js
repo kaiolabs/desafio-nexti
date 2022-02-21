@@ -5,11 +5,17 @@ import Emails from '../components/emails/Emails'
 import { i18n } from '../translate/i18n'
 import styled from 'styled-components'
 import styles from './Home.module.css'
-import { useState } from 'react'
+import { useState, useContext } from 'react'
+import { ThemeContext } from 'styled-components'
 
 
 
-function Home() {
+function Home({toogleTheme}) {
+
+    const { colors } = useContext(ThemeContext)
+    const [name] = useState(localStorage.getItem("name"))
+    const [pesquisa, setPesquisa] = useState()
+
 
     const Aside = styled.div`
 
@@ -50,7 +56,7 @@ function Home() {
             left: 55px;
             top: 35px;
             background-color: #3dc73d;
-            border: 1px solid #EFEFEF;
+            border: 1px solid ${colors.background};
 
         }
 
@@ -73,17 +79,12 @@ function Home() {
         }
     `;
 
-
-    const [name] = useState(localStorage.getItem("name"))
-    const [pesquisa, setPesquisa] = useState()
-
-
     return (
         <div>
             <section className={styles.grid}>
 
                 <header>
-                    <NavBar />
+                    <NavBar toogleTheme ={toogleTheme}/>
                 </header>
 
                 <aside className={styles.aside}>
@@ -128,7 +129,7 @@ function Home() {
                     </div>
 
                     <div className={styles.mainEmails}>
-                        <Emails/>
+                        <Emails color = {colors.secundary}/>
                     </div>
                 </main>
 

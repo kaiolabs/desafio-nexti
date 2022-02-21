@@ -34,7 +34,7 @@
 .navbar_nav div{
     margin-right: 50px;
     display: flex;
-    flex-direction: row;
+    
 }
 .nav_item{
     margin: 20px;
@@ -66,7 +66,7 @@ svg{
     font-size: 1.7em;
 }
 
-.dropDown{
+.dropDownMenu{
     z-index: 10;
     position: absolute;
     top: 67px;
@@ -79,6 +79,24 @@ svg{
     padding: 1rem;
     overflow: hidden;
     border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.linguagem{
+    height: 30px;
+    width: 90%;
+    background: none;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.linguagem option{
+    color: black;
 }
 
 
@@ -114,3 +132,31 @@ svg{
     font-weight: 500;
 }
 
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 35px;
+    color: white;
+    font-size: 1.25em;
+}
+
+.switch{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.switchButton{
+    margin-left: 20px;
+    margin-right: 70px;
+}
+
+.moon{
+    font-size: 1.4em;
+    margin-left: -25px;
+}
+
+.sun{
+    font-size: 1.6em;
+}

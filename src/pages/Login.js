@@ -2,9 +2,9 @@ import { useState } from 'react';
 import Container from '../components/layout/Container';
 import styles from './Login.module.css'
 import { useNavigate } from 'react-router-dom'
-import MessagerAlert from '../utils/MessagerAlert';
-import Switch from 'react-switch';
-import React, { useContext } from 'react';
+import MessagerAlert from '../utils/MessagerAlert'
+import Switch from 'react-switch'
+import React, { useContext } from 'react'
 import { ThemeContext } from 'styled-components'
 import { i18n } from '../translate/i18n'
 

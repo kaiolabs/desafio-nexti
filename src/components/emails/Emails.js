@@ -1,4 +1,3 @@
-import styles from './Emails.module.css'
 import { useEffect, useState } from 'react'
 import CardEmails from './CardEmails';
 
@@ -17,10 +16,9 @@ function Emails() {
             .catch((err) => console.log(err))
     }, [])
 
-    // console.log(itens[0])
     
     return (
-        <div className={styles.div}>
+        <div>
             {
                 itens.map((email) => (
                     email.subMenuItems.map((sub) => (

@@ -2,7 +2,9 @@ const messages = {
     es: {
         translations: {
             titles: {
-                title: 'Bienvenido'
+                title: 'Bienvenido',
+                menuTemas: 'Temas',
+                menuIdioma: 'Idioma',
             },
             messages: {
                 placeholderPassword: 'Informar la contraseña',
