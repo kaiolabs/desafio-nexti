@@ -1,3 +1,6 @@
+
+// Componente responsável por definir o estilo global da aplicação.
+
 import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`

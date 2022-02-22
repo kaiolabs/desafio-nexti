@@ -1,3 +1,6 @@
+
+// Propriedade do tema Light
+
 export default{
     title: 'light',
 

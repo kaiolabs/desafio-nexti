@@ -1,3 +1,6 @@
+
+// Componente responsável por salvar o tema da aplicação.
+
 import { useState , useEffect} from "react"
 
 function usePersistedState(key, initialState) {

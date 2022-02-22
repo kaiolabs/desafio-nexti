@@ -2,6 +2,8 @@ import styles from './MenuAside.module.css'
 import { useEffect, useState } from 'react'
 import Card from './Card';
 
+// Menu lateral da aplicação
+
 function MenuAside() {
 
     const [menus, setMenus] = useState([]);

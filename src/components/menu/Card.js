@@ -1,6 +1,8 @@
 import styles from './Card.module.css'
 import { useState } from 'react'
 
+// Cards do menu lateral
+
 function Card({ id, tarefa, subMenus }) {
 
     const [open, setOpen] = useState(false)

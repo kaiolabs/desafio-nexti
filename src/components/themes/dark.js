@@ -1,3 +1,6 @@
+
+// Propriedade do tema Dark
+
 export default{
     title: 'dark',
 

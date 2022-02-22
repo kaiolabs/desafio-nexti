@@ -6,6 +6,7 @@ import { i18n } from '../../translate/i18n'
 import { ThemeContext } from 'styled-components'
 import Switch from 'react-switch'
 
+// Componente barra de navegação.
 
 function NavBar({ toogleTheme }) {
 

@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import CardEmails from './CardEmails';
 
+// Componente responsável por carregar os e-mails da caixa de e-mails.
+
 function Emails() {
 
     const [itens, setItens] = useState([]);

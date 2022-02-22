@@ -1,9 +1,12 @@
 import { RiMessage2Fill } from 'react-icons/ri'
 import styles from './CardEmails.module.css'
 import styled from 'styled-components'
-
 import { useContext } from 'react'
 import { ThemeContext } from 'styled-components'
+
+
+// Componente caixa de e-mails.
+
 
 function CardEmails({ subMenuItems }) {
 

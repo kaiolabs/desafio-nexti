@@ -10,6 +10,8 @@ import usePersistedState from './utils/usePersistedState';
 
 function App() {
   
+  // Parte responsável por verificar o tema e seta o tema.
+
   const [theme, setTheme] = usePersistedState('theme', light)
 
   const toogleTheme = () => {
@@ -17,8 +19,11 @@ function App() {
   }
   
   return (
+    // Componente que provem os temas da aplicação.
     <ThemeProvider theme={theme}>
+      {/* Componente responsável por definir os estilos globais da aplicação. */}
       <GlobalStyle/>
+       {/* Rotas da aplicação */}
       <Router>
         <Routes>
           <Route exact path="/" element={<Login toogleTheme={toogleTheme}/>}></Route>

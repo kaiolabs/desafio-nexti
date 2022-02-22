@@ -1,6 +1,9 @@
 import Styles from './MessagerAlert.module.css';
 import { useState, useEffect } from 'react';
 
+
+// Componente responsável por emitir os alertas.
+
 function MessagerAlert({ type, msg }) {
 
     const [visible, setVisible] = useState(false)

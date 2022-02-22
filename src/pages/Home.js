@@ -12,10 +12,13 @@ import { ThemeContext } from 'styled-components'
 
 function Home({toogleTheme}) {
 
+    // Declaração dos useState e useContext
+
     const { colors } = useContext(ThemeContext)
     const [name] = useState(localStorage.getItem("name"))
     const [pesquisa, setPesquisa] = useState()
 
+    // Aqui foi utilizado o Styled Components para estilizar alguns componentes do menu lateral.
 
     const Aside = styled.div`
 
@@ -83,9 +86,14 @@ function Home({toogleTheme}) {
         <div>
             <section className={styles.grid}>
 
+                {/* Nav bar */}
+
                 <header>
+                    
                     <NavBar toogleTheme ={toogleTheme}/>
                 </header>
+
+                {/* Icone de usuário on */}
 
                 <aside className={styles.aside}>
                     <Aside>
@@ -101,9 +109,13 @@ function Home({toogleTheme}) {
 
                     <hr className={styles.linha} />
 
+                    {/* Menu lateral */}
+
                     <MenuAside />
 
                 </aside>
+
+                {/* Tipo da caizxa de emais onde faz a pesquisa e demias opições com arquivar, agendar e atribuir */}
 
                 <main>
                     <div className={styles.mainTop}>
@@ -127,6 +139,9 @@ function Home({toogleTheme}) {
                             </div>
                         </div>
                     </div>
+
+
+                    {/* Box de E-mais */}
 
                     <div className={styles.mainEmails}>
                         <Emails color = {colors.secundary}/>

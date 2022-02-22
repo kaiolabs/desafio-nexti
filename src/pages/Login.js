@@ -98,6 +98,8 @@ function Login({ toogleTheme }) {
 
                 <div className={styles.boxLogin}>
 
+                    {/* Mensagem de alerta para o usuário caso erre a senha ou o nome de usuário. */}
+                    
                     {message && <MessagerAlert type={type} msg={message} />}
 
                     <h2>{i18n.t('titles.title')}</h2>
