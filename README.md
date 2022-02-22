@@ -195,3 +195,27 @@
 ![alt text](https://github.com/kaiolabs/desafio-nexti/blob/master/README/home4.png?raw=true)
 
 <br/>
+
+# Tecnologias usadas no projeto 
+
+## React.js
+
+### O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.
+
+<br/>
+
+## React Router 
+
+### Ele permite a navegação entre visualizações de vários componentes em um React Application, permite alterar a URL do navegador e mantém a UI sincronizada com a URL.
+
+<br/>
+
+## Styled Components
+
+### Styled Components é uma biblioteca (lib) que utiliza o conceito de CSS-in-JS, ou seja, que nos permite escrever códigos CSS dentro do Javascript. ... Criando códigos dessa forma, podemos reaproveitar o CSS de um website de forma mais rápida e ainda escrevê-lo sem revezar entre estilos diferentes de escrita.
+
+<br/>
+
+## I18next Browser Languagedetector
+
+### Este é um plug-in de detecção de idioma i18next usado para detectar o idioma do usuário no navegador com suporte para:
