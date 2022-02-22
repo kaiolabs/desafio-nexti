@@ -72,7 +72,7 @@
 
 <br/>
 
-> ### 10 - Agora digite ( nmp i ) para instalar as dependências do projeto 
+> ### 10 - Agora digite ( npm i ) para instalar as dependências do projeto 
 
 <br/>
 
@@ -80,7 +80,7 @@
 
 <br/>
 
-> ### 10 - Agora digite ( nmp start ) para iniciar o projeto 
+> ### 10 - Agora digite ( npm start ) para iniciar o projeto 
 
 <br/>
 
@@ -142,6 +142,7 @@
 
 ![alt text](https://github.com/kaiolabs/desafio-nexti/blob/master/README/login3.png?raw=true)
 
+<br/>
 
 # Temas
 
@@ -206,16 +207,19 @@
 
 ## React Router 
 
-### Ele permite a navegação entre visualizações de vários componentes em um React Application, permite alterar a URL do navegador e mantém a UI sincronizada com a URL.
+### Ele permite a navegação entre visualizações de vários componentes em um React Application, permite alterar a URL do navegador e mantém a UI sincronizada com a URL. <br/>
+### Nesse projeto o React Router foi utilizado para gerenciar as rotas do programa.
 
 <br/>
 
 ## Styled Components
 
-### Styled Components é uma biblioteca (lib) que utiliza o conceito de CSS-in-JS, ou seja, que nos permite escrever códigos CSS dentro do Javascript. ... Criando códigos dessa forma, podemos reaproveitar o CSS de um website de forma mais rápida e ainda escrevê-lo sem revezar entre estilos diferentes de escrita.
+### Styled Components é uma biblioteca (lib) que utiliza o conceito de CSS-in-JS, ou seja, que nos permite escrever códigos CSS dentro do Javascript. ... Criando códigos dessa forma, podemos reaproveitar o CSS de um website de forma mais rápida e ainda escrevê-lo sem revezar entre estilos diferentes de escrita. <br/>
+
+### O Styled Components foi utilizado criar e gerenciar os temas do projeto, além de estilizar alguns componentes da aplicação.
 
 <br/>
 
-## I18next Browser Languagedetector
+## I18next
 
-### Este é um plug-in de detecção de idioma i18next usado para detectar o idioma do usuário no navegador com suporte para:
+### O I18next Browser foi usado para transforma a aplicação em multi-idiomas, a aplicação conta com 3 idiomas atualmente (português inglês e espanhol). Esse plug-in possibilita adicionar quintos idiomas a sua aplicação precisa!
